@@ -32,14 +32,14 @@ defmodule UAInspector.Mixfile do
   end
 
   defp deps do
-    [ { :ex_doc, ">= 0.0.0", only: :dev },
+    [ { :ex_doc, "== 0.15.0", only: :dev },
 
       { :dialyze,     "~> 0.2", only: :test },
       { :excoveralls, "~> 0.5", only: :test },
 
-      { :hackney, "~> 1.0" },
-      { :poolboy, "~> 1.0" },
-      { :yamerl,  "~> 0.3" } ]
+      { :hackney, "== 1.7.1" },
+      { :poolboy, "== 1.5.1" },
+      { :yamerl,  "== 0.4.0" } ]
   end
 
   defp docs do
